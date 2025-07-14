@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distanță Aproximativă"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/barsContainer"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="45dp"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:weightSum="5">
+
+        <View
+            android:id="@+id/bar5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <View
+            android:id="@+id/bar4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <View
+            android:id="@+id/bar3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <View
+            android:id="@+id/bar2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <View
+            android:id="@+id/bar1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#CCCCCC" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_below="@id/barsContainer"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distanta: -- m"
+        android:textSize="36sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/powerTextView"
+        android:layout_below="@id/distanceTextView"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puterea: -- dB"
+        android:textSize="36sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
