@@ -1,4 +1,4 @@
-# Weather app with BLE and ESP32 integration
+# BLE Distance Estimation System (ESP32 & Android App)
 ## Description
 This project implements a BLE-based distance estimation system between an ESP32 and an Android application using the Received Signal Strength Indicator (RSSI). 
 The Android app connects to the ESP32 via Bluetooth Low Energy, continuously reads the RSSI value, estimates the distance, and displays it using proximity indicators.
